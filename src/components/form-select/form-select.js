@@ -21,7 +21,7 @@ export default {
       return h('option', {
         key: `option_${index}_opt`,
         attrs: { disabled: Boolean(option.disabled) },
-        domProps: { innerHTML: option.text, value: option.value }
+        domProps: { innerText: option.text, value: option.value }
       })
     })
     return h(
